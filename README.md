@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+A responsive weather webapp created using REACT Typescript, REDUX Typescript, TAILWIND CSS, OpenWeatherAPI's
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+At start there is a NAVBAR and SEARCH BAR where user can enter CITY name or ZIP code. User can enter one of both.
 
-## Available Scripts
+The search bar then checks if the input is in Number or Text and based on the inputs sends the search term to REDUX which calls specific OpenWeatherAPI's to get CURRENT weather data and WEEKLY forecast.
 
-In the project directory, you can run:
+The data from redux is then fetched by CurrentForecast and WeeklyForecast components and the relevent information is displayed on screen.
 
-### `npm start`
+Tailwind handles all the frontend designing of the webapp. We could also use libraries like MUI, Semantic or AntD to perform these frontend designing's.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+There is also a component where user can input Celsius or Fahrenheit. If user enters in the Celsius field, Fahrenheit is calculated and vice versa.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+There is also a component where a map of the entered location is to be displayed and layers of different weather conditions will be shown on top of the map layer.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+But due to time constraints and some other problems this module is just a mockup and currently not functional.
